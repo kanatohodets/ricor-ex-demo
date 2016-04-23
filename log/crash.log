@@ -1,0 +1,37 @@
+2016-04-23 21:35:30 =CRASH REPORT====
+  crasher:
+    pid: <0.387.0>
+    registered_name: []
+    exception exit: {{undef,[{local,init,['Elixir.RicorEx.Sup',{local,'Elixir.RicorEx.Sup'}],[]},{supervisor,init,1,[{file,"supervisor.erl"},{line,287}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.386.0>]
+    messages: []
+    links: [<0.386.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 25
+    reductions: 114
+  neighbours:
+2016-04-23 21:35:30 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.385.0>
+    registered_name: []
+    exception exit: {{{undef,[{local,init,['Elixir.RicorEx.Sup',{local,'Elixir.RicorEx.Sup'}],[]},{supervisor,init,1,[{file,"supervisor.erl"},{line,287}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{'Elixir.RicorEx',start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.384.0>]
+    messages: [{'EXIT',<0.386.0>,normal}]
+    links: [<0.384.0>,<0.7.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 117
+  neighbours:
+2016-04-23 21:35:30 =ERROR REPORT====
+** gen_event handler 'Elixir.Logger.ErrorHandler' crashed.
+** Was installed in error_logger
+** Last event was: {info_report,<0.31.0>,{<0.7.0>,std_info,[{application,ricor_ex},{exited,{{undef,[{local,init,['Elixir.RicorEx.Sup',{local,'Elixir.RicorEx.Sup'}],[]},{supervisor,init,1,[{file,"supervisor.erl"},{line,287}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{'Elixir.RicorEx',start,[normal,[]]}}},{type,temporary}]}}
+** When handler state == #{dropped => 0,last_length => 0,last_time => {1461,440130,84365},logger => <0.379.0>,otp => true,sasl => false,threshold => 500}
+** Reason == {#{'__exception__' => true,'__struct__' => 'Elixir.RuntimeError',message => <<"cannot use Logger, the :logger application is not running">>},[{'Elixir.Logger.Config','__data__',0,[{file,"lib/logger/config.ex"},{line,53}]},{'Elixir.Logger.ErrorHandler',log_event,5,[{file,"lib/logger/error_handler.ex"},{line,59}]},{'Elixir.Logger.ErrorHandler',handle_event,2,[{file,"lib/logger/error_handler.ex"},{line,27}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,538}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,520}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,261}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}

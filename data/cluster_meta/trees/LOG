@@ -1,0 +1,32 @@
+2016/04/23-21:35:29.866249 b309c000                        Version: develop
+2016/04/23-21:35:29.866277 b309c000             Options.comparator: leveldb.InternalKeyComparator
+2016/04/23-21:35:29.866282 b309c000      Options.create_if_missing: 1
+2016/04/23-21:35:29.866284 b309c000        Options.error_if_exists: 0
+2016/04/23-21:35:29.866287 b309c000        Options.paranoid_checks: 0
+2016/04/23-21:35:29.866289 b309c000     Options.verify_compactions: 1
+2016/04/23-21:35:29.866292 b309c000                    Options.env: 0x7feb3bc00730
+2016/04/23-21:35:29.866294 b309c000               Options.info_log: 0x7feb3bc02680
+2016/04/23-21:35:29.866297 b309c000      Options.write_buffer_size: 6633843
+2016/04/23-21:35:29.866299 b309c000         Options.max_open_files: 1000
+2016/04/23-21:35:29.866302 b309c000            Options.block_cache: 0x7feb3d801e00
+2016/04/23-21:35:29.866304 b309c000             Options.block_size: 4096
+2016/04/23-21:35:29.866307 b309c000       Options.block_size_steps: 16
+2016/04/23-21:35:29.866309 b309c000 Options.block_restart_interval: 16
+2016/04/23-21:35:29.866312 b309c000            Options.compression: 1
+2016/04/23-21:35:29.866315 b309c000          Options.filter_policy: leveldb.BuiltinBloomFilter2
+2016/04/23-21:35:29.866317 b309c000              Options.is_repair: false
+2016/04/23-21:35:29.866320 b309c000         Options.is_internal_db: true
+2016/04/23-21:35:29.866323 b309c000      Options.total_leveldb_mem: 2136893030
+2016/04/23-21:35:29.866325 b309c000  Options.block_cache_threshold: 33554432
+2016/04/23-21:35:29.866328 b309c000  Options.limited_developer_mem: false
+2016/04/23-21:35:29.866330 b309c000              Options.mmap_size: 0
+2016/04/23-21:35:29.866332 b309c000       Options.delete_threshold: 1000
+2016/04/23-21:35:29.866335 b309c000       Options.fadvise_willneed: false
+2016/04/23-21:35:29.866337 b309c000      Options.tiered_slow_level: 0
+2016/04/23-21:35:29.866340 b309c000     Options.tiered_fast_prefix: data/cluster_meta/trees
+2016/04/23-21:35:29.866342 b309c000     Options.tiered_slow_prefix: data/cluster_meta/trees
+2016/04/23-21:35:29.866345 b309c000                         crc32c: hardware
+2016/04/23-21:35:29.866347 b309c000   Options.cache_object_warming: true
+2016/04/23-21:35:29.866350 b309c000                File cache size: 404049061
+2016/04/23-21:35:29.866352 b309c000               Block cache size: 406146213
+2016/04/23-21:35:29.872187 b309c000 Delete type=3 #1
