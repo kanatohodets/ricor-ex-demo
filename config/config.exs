@@ -29,7 +29,13 @@ use Mix.Config
 #
 #     import_config "#{Mix.env}.exs"
 
-config :riak_core, ring_state_dir: 'ring_data_dir'
-# TODO: wtf...
-config :riak_core, schema_dirs: ['/Users/btyler/personal/prog/elixir/ricor_ex/_build/dev/lib/riak_core/priv']
 
+config :riak_core,
+  web_port: 8098,
+  handoff_port: 8099,
+  ring_state_dir: 'ring_data_dir',
+  platform_data_dir: 'data',
+  # TODO: wtf...
+  schema_dirs: ['/Users/btyler/personal/prog/elixir/ricor_ex/_build/dev/lib/riak_core/priv']
+
+import_config "#{Mix.env}.exs"
