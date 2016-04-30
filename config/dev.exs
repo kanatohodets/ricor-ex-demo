@@ -43,6 +43,9 @@ config :riak_core,
   schema_dirs: ['/Users/btyler/personal/prog/elixir/ricor_ex/_build/dev/lib/riak_core/priv']
 
 config :lager,
-  error_logger_hwm: 5000
+  error_logger_hwm: 5000,
+  handlers: [
+    lager_console_backend: :debug,
+  ]
 
 import_config "#{Mix.env}.exs"

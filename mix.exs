@@ -2,7 +2,7 @@ defmodule RicorEx.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :ricor_ex,
+    [app: RicorEx.Service,
      version: "0.0.1",
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
@@ -14,7 +14,7 @@ defmodule RicorEx.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [mod: {RicorEx, []},
+    [mod: {RicorEx.App, []},
      applications: [:riak_core, :logger]]
   end
 

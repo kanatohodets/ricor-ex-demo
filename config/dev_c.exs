@@ -1,6 +1,7 @@
 use Mix.Config
 
 config :riak_core,
+  node: 'dev_c@192.168.1.13',
   web_port: 8298,
   handoff_port: 8299,
   ring_state_dir: 'ring_data_dir_c',
