@@ -29,6 +29,8 @@ use Mix.Config
 #
 #     import_config "#{Mix.env}.exs"
 
+config :sasl,
+  errlog_type: :error
 
 config :riak_core,
   web_port: 8098,
