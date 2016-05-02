@@ -2,7 +2,7 @@ defmodule RicorEx.Mixfile do
   use Mix.Project
 
   def project do
-    [app: RicorEx,
+    [app: :ricor_ex,
      version: "0.0.1",
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
