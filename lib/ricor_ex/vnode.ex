@@ -6,7 +6,6 @@ defmodule RicorEx.Vnode do
   Record.defrecord :state, [:partition]
 
   def start_vnode(partition) do
-    #Logger.warn("some stuff from start_vnode? #{inspect([partition, __MODULE__])} and #{inspect(stuff)}")
     :riak_core_vnode_master.get_vnode_pid(partition, __MODULE__)
   end
 
@@ -17,6 +16,11 @@ defmodule RicorEx.Vnode do
   def handle_command(:ping, _sender, state) do
     Logger.warn("got a ping request!! woohoO!'")
     {:reply, {:pong, state(state, :partition)}, state}
+  end
+
+  def handle_command({req_id, :ping}, _sender, state) do
+    Logger.warn("got a ping request!! woohoO!'")
+    {:reply, {req_id, {:pong, state(state, :partition)}}, state}
   end
 
   def handle_command(message, _sender, state) do

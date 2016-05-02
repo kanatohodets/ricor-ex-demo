@@ -9,8 +9,9 @@ defmodule RicorEx.Sup do
   def init(_args) do
     # riak_core appends _master to 'RicorEx.Vnode'
     children = [
-      worker(:riak_core_vnode_master, [RicorEx.Vnode], name: RicorEx.Vnode_master, id: RicorEx.Vnode_master_worker),
-      worker(:riak_core_vnode_master, [RicorEx.OtherVnode], name: RicorEx.OtherVnode_master, id: RicorEx.OtherVnode_master_worker)
+      worker(:riak_core_vnode_master, [RicorEx.Vnode], id: RicorEx.Vnode_master_worker),
+      worker(:riak_core_vnode_master, [RicorEx.OtherVnode], id: RicorEx.OtherVnode_master_worker),
+      supervisor(RicorEx.OpFSM.Sup, [])
     ]
     supervise(children, strategy: :one_for_one, max_restarts: 5, max_seconds: 10)
   end
